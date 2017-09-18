@@ -1,0 +1,101 @@
+﻿<div class="iner_body">
+    <div class="iner_title">
+        <h2>{{services.title}}</h2>
+        <p><a href="#" style="color:#fff;">Home</a> / Our Services</p>
+    </div>
+    <div class="our_services">
+        <div class="container">
+
+            <!--pagination-->
+
+            <div class="service_pagination">
+                <nav aria-label="..." style="background:transparent; box-shadow:inherit;">
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link" ng-disabled="true" ng-click="services.randomService($event, 1)" tabindex="-1" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+						
+						<li class="page-item" ng-repeat = "n in services.pages" ng-class = "services['activePage' + n] ? 'active': ''"  >						
+							<a class="page-link" ng-click="services.randomService($event, n)">{{n}}<span class="sr-only">(current)</span></a>
+						<li>                       
+                        <li class="page-item">
+                            <a class="page-link" ng-click="services.randomService($event, 5)" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="clr"></div>
+            </div>
+			<div ng-repeat="service in services.services | limitTo : 3">
+            <div class="subservice">
+                <div class="col-md-4 servic_pic">
+                    <img ng-src="{{service.image}}" alt="aboutus_img" class="img-responsive">
+                </div>
+                <div class="col-md-8">
+                    <h3 ng-bind="service.title"></h3>
+                    <p>
+                        The shellac coating is insoluble in stomach acid and may make the tablet difficult for the body to break down or assimilate. &nbsp; 
+                        <a data-toggle="collapse" data-target="#demo2" >Read more...</a>
+                        <!-- <br/>
+                        <span id="demo2" class="collapse">
+                            The shellac coating is insoluble in stomach acid and may make the tablet difficult for the body to break down or assimilate. The shellac coating is insoluble in stomach acid and may make the tablet difficult for the body to break down or assimilate.
+                        </span> -->
+                    </p>
+                    <p>Price : <span style="color:#cf1b86; font-weight:600;"> &nbsp;&#x24; 20.00 </span></p>
+                    <div class="service_booknow">
+                        <a ui-sref="contactus">Contact Now</a>
+                    </div>
+                </div>
+                <div class="clr"></div>
+            </div>
+			</div>
+            <!-- <div class="subservice"> -->
+                <!-- <div class="col-md-4 servic_pic"> -->
+                    <!-- <img src="./assets/img/service1.jpg" alt="aboutus_img" class="img-responsive"> -->
+                <!-- </div> -->
+                <!-- <div class="col-md-8"> -->
+                    <!-- <h3>File and Polish</h3> -->
+                    <!-- <p> -->
+                        <!-- A file and polish will involve the therapist filling your nails into the shape of your choice – a good spa will ask whether you prefer square or oval shaped nails &nbsp;  -->
+                        <!-- <a data-toggle="collapse" data-target="#demo3">Read more...</a> -->
+                        <!-- <br /> -->
+                        <!-- <span id="demo3" class="collapse"> -->
+                            <!-- A file and polish will involve the therapist filling your nails into the shape of your choice – a good spa will ask whether you prefer square or oval shaped nails A file and polish will involve the therapist filling your nails into the shape of your choice – a good spa will ask whether you prefer square or oval shaped nails -->
+                        <!-- </span> -->
+                    <!-- </p> -->
+                    <!-- <p>Price : <span style="color:#cf1b86; font-weight:600;"> &nbsp;&#x24;  10.00 </span></p> -->
+                    <!-- <div class="service_booknow"> -->
+                        <!-- <a ui-sref="contactus">Contact Now</a> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+                <!-- <div class="clr"></div> -->
+            <!-- </div> -->
+             <!--<div class="subservice"> 
+                <div class="col-md-4 servic_pic">
+                    <img src="./assets/img/service2.jpg" alt="aboutus_img" class="img-responsive">
+                </div>
+                <div class="col-md-8">
+                    <h3>Hot Stone Manicure</h3>
+                    <p>
+                        A Classic Manicure with a luxurious addition! This treatment incorporates warm basalt stones into the massage, relaxing your often neglected hands. &nbsp; 
+                        <a data-toggle="collapse" data-target="#demo">Read more...</a>
+                        <br />
+                        <span id="demo" class="collapse">
+                            A Classic Manicure with a luxurious addition! This treatment incorporates warm basalt stones into the massage, relaxing your often neglected hands.A Classic Manicure with a luxurious addition! This treatment incorporates warm basalt stones into the massage, relaxing your often neglected hands.
+                        </span>
+                    </p>
+                    <p>Price : <span style="color:#cf1b86; font-weight:600;"> &nbsp;&#x24;  25.00 </span></p>
+                    <div class="service_booknow">
+                        <a ui-sref="contactus">Contact Now</a>
+                    </div>
+                </div>
+                <div class="clr"></div>
+            </div>-->
+        </div>
+    </div>
+</div>

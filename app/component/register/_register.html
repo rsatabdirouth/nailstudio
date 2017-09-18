@@ -1,0 +1,111 @@
+﻿<div class="iner_body">
+    <div class="our_services alliner">
+
+        <!--form_section-->
+
+        <div class="container">
+            <!-- <h1 class="animated fadeInDown delay-07s">Book Appointment</h1> -->
+            <div class="formSection">
+                <h3>{{register.title}}</h3>
+                <div class="formDiv">
+                    <form role="form" name="userForm" ng-submit="register.submitForm(userForm.$valid)" novalidate>
+                        <div class="col-sm-4 formPadding">
+                            <div class="col-sm-4" style="padding-left:0;">
+                                <div class="form-group">
+                                    <label for="name">Title</label>
+                                    <select class="form-control" style="padding:5px;">
+                                        <option>Mr.</option>
+                                        <option>Mrs.</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-8" style="padding:0;">
+                                <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+                                    <label for="name">First Name</label>
+                                    <input type="Text" class="form-control" id="Name" ng-model="register.name" required>
+                                    <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">You name is required.</p>
+
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="col-sm-4 formPadding">
+                            <div class="form-group">
+                                <label for="name">Last Name</label>
+                                <input type="Text" class="form-control" id="Name">
+                            </div>
+                        </div>
+                        <div class="col-sm-4 formPadding" style="padding-right:0;">
+                            <div class="form-group">
+                                <label for="name">Phone Number</label>
+                                <input type="Text" class="form-control" id="name">
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div class="col-sm-4 formPadding">
+                            <div class="form-group">
+                                <label for="name">Mobile Number (Optional)</label>
+                                <input type="Text" class="form-control" id="Name">
+                            </div>
+                        </div>
+                        <div class="col-sm-4 formPadding">
+                            <div class="form-group">
+                                <label for="pwd">Email address:</label>
+                                <input type="password" class="form-control" id="pwd">
+                            </div>
+                        </div>
+                        <div class="col-sm-4 formPadding" style="padding-right:0;">
+                            <div class="form-group">
+                                <label for="name">Password:</label>
+                                <input type="Text" class="form-control" id="Name">
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+                        <!-- <div class="col-sm-4 formPadding">
+                            <div class="form-group">
+                                <label for="name">Address</label>
+                                <input type="Text" class="form-control" id="Name">
+                            </div>
+                        </div>
+                        <div class="col-sm-4 formPadding">
+                            <div class="form-group">
+                                <label for="pwd">City</label>
+                                <input type="password" class="form-control" id="pwd">
+                            </div>
+                        </div>
+                        <div class="col-sm-4 formPadding">
+                            <div class="form-group">
+                                <label for="name">Post code</label>
+                                <input type="Text" class="form-control" id="Name">
+                            </div>
+                        </div>
+                        <div class="clear"></div> -->
+                        <!-- <div class="col-sm-6 formPadding">
+                            <label for="name" style="margin-bottom: 12px !important;">Your Business Name</label>
+                            <div class="clear"></div>
+                            <div class="col-xs-5" style="padding:0;">
+                                <input type="radio" id="test1" name="radio-group" checked>
+                                <label for="test1">Your’s Own</label>
+                            </div>
+                            <div class="col-xs-6" style="padding:0;">
+                                <input type="radio" id="test2" name="radio-group">
+                                <label for="test2">Franchise</label>
+                            </div>
+                        </div> -->
+                        <div class="bottonDiv">
+                            <center>
+                                <!-- <a href="#" style="float:inherit;">Next</a> -->
+                                <input value="Sign me up!" id="" class="submit" type="submit">
+                            </center>
+                        </div>
+                        <div class="clear"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

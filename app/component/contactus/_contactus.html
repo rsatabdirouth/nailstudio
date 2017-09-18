@@ -1,0 +1,68 @@
+﻿<div class="iner_body">
+    <div class="iner_title">
+        <h2>{{contactus.title}}</h2>
+        <p><a href="#" style="color:#fff;">Home</a> / Contact us</p>
+    </div>
+    <div class="our_services alliner contactbody">
+        <div class="container">
+            <h1 class="animated fadeInDown delay-07s">Our Offices</h1>
+            <div class="office_section">
+                <div class="col-sm-8 no-padding">
+                    <div class="mapsection">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9614.657501198019!2d-1.1579318683227524!3d52.95446185409431!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf12fc8c2c4a41855!2sUSA+Nail+Centre!5e0!3m2!1sen!2suk!4v1496926287264" width="100%" height="268" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-sm-4 no-padding">
+                    <div class="address_section">
+                        <h3>Contact Info</h3>
+                        <ul>
+                            <li><i class="fa fa-street-view" aria-hidden="true"></i> &nbsp; 19 Trinity Walk, City Centre, Nottingham NG1 2AN</li>
+                            <li><i class="fa fa-volume-control-phone" aria-hidden="true"></i> &nbsp; +44 115 950 8932</li>
+                            <li><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp; info@demolink.org</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <div class="" style="background:#fff;">
+            <div class="get_intuch col-md-8 col-md-offset-2">
+                <h1 class="animated fadeInDown delay-07s">Get in Touch</h1>
+                <form class="contact_formsection" name="contactus.form" ng-submit="contactus.submit()">
+                    <div class="col-sm-4 formPadding">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="Text" ng-model="contactus.contact.name" class="form-control" name="name" ng-required="true">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 formPadding">
+                        <div class="form-group">
+                            <label for="name">Phone Number</label>
+                            <input type="Text" ng-pattern="contactus.ukPhonePattern" ng-model="contactus.contact.phoneNumber" class="form-control" name="phoneNumber" ng-required="true">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 formPadding">
+                        <div class="form-group">
+                            <label for="name">Email Address</label>
+                            <input type="email" ng-model="contactus.contact.email" class="form-control" name="email" ng-required="true">
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                    <div class="formPadding">
+                        <div class="form-group">
+                            <label for="name">Message</label>
+                            <textarea class="form-control" ng-model="contactus.contact.message" name="message" rows="4" ng-required="true"></textarea>
+                        </div>
+                    </div>
+                    <div class="bottonDiv">
+                        <center>
+                            <!-- <a href="#" style="float:inherit;">Next</a> -->
+                            <input value="Send" ng-disabled="contactus.form.$invalid" class="submit" type="submit">
+                        </center>
+                    </div>
+                </form>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+</div>

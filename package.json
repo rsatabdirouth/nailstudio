@@ -1,0 +1,35 @@
+{
+  "name": "usnailstudio",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Tanvir-Emedia@bitbucket.org/Tanvir-Emedia/usnailstudio.git"
+  },
+  "keywords": [
+    "nail",
+    "salon"
+  ],
+  "author": "Debabrata Khanra",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/Tanvir-Emedia/usnailstudio#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-flatten": "*",
+    "gulp-angular-filesort": "*",
+    "gulp-concat": "*",
+    "gulp-uglify": "*",
+    "gulp-ng-annotate" : "*",
+    "gulp-clean-css": "*",
+    "gulp-rename": "*",
+    "gulp-inject": "*",
+    "gulp-imagemin": "*",
+    "run-sequence": "*",
+    "gulp-gzip": "*"
+  }
+}
